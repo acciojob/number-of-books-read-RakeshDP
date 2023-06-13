@@ -10,7 +10,9 @@ const library = [
     readingStatus: true,
   },
   {
+	  
     author: "Suzanne Collins",
+	  
     title: "Mockingjay: The Final Book of The Hunger Games",
     readingStatus: false,
   },
@@ -18,7 +20,15 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+	let count=0;
+	for(let x in library){
+		if(library[x][2] === true){
+			count++;
+		}
+		return count;
+	}
 };
+
 
 // Do not change the code below
 
